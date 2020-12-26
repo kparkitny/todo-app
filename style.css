@@ -1,0 +1,28 @@
+/* Author info: https://github.com/kparkitny */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    line-height: 1.8rem;
+}
+
+span, .task {
+    color: blue;
+}
+
+.task::marker {
+    color:black;
+}
+
+h2 {
+    line-height: 0.2rem;
+}
