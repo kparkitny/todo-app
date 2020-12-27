@@ -14,7 +14,7 @@ const addTask = (e) => {
     if (titleTask === '') return;
     const task = document.createElement('li');
     task.className = 'task';
-    task.innerHTML = `${titleTask} <button class='removeBtn'>Usuń</button><button class='doneBtn'>Zrobione</button>`;
+    task.innerHTML = `${titleTask} <button class='removeBtn'>Usuń</button> <button class='doneBtn'>Zrobione</button>`;
     ol.appendChild(task);
     taskNumber.textContent = listItems.length;
     input.value = '';
@@ -33,8 +33,11 @@ const doneTask = (e) => {
     e.target.parentNode.classList.add('doneList');
     doneNumber.textContent = doneList.length;
     if (doneList.length == listItems.length) {
-        alert('Gratulację! Wszystie zadania wykonane!')
+        swal.fire('Gratulację!', 'Wszystkie zadania wykonane!', 'success');
     }
+    e.target.remove();
 }
 
 form.addEventListener('submit', addTask)
+
+
