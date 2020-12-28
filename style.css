@@ -61,7 +61,7 @@ h2 {
 }
 
 li {
-    line-height: 1.8rem;
+    line-height: 1.9rem;
     font-weight: bold;
 }
 
@@ -70,7 +70,7 @@ span, .task {
 }
 
 .task::marker {
-    color:black;
+   color:black;
 }
 
 button {

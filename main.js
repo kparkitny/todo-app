@@ -37,7 +37,5 @@ const doneTask = (e) => {
     }
     e.target.remove();
 }
-
-form.addEventListener('submit', addTask)
-
+form.addEventListener('submit', addTask);
 
